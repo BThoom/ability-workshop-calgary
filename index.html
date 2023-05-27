@@ -4,32 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Hackathon Website</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link your custom CSS file -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Ability Workshop Society</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Request Assistance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Volunteer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h1>Welcome to Our Hackathon Website</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac ipsum auctor, venenatis risus et, cursus risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla ut ultrices quam, in vehicula justo. Nam ac arcu eget odio ultrices ultrices vel in arcu. Nunc sed gravida felis.</p>
+    <section class="container mt-4">
+      <h1>Welcome to Ability Workshop Society</h1>
+      <p>Building innovative solutions for people with disabilities.  
+
+        Promoting independent living, healthy recreation, inclusive play and self sufficiency.</p>
     </section>
 
-    <section>
+    <section class="container mt-4">
       <h2>About Us</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac ipsum auctor, venenatis risus et, cursus risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla ut ultrices quam, in vehicula justo. Nam ac arcu eget odio ultrices ultrices vel in arcu. Nunc sed gravida felis.</p>
+      <p>Ability Workshop Society started out as the Calgary chapter of Tetra Society of North America in 1994.  In 2002, Tetra Assistive Devices Society of Calgary evolved into an independent chapter of Tetra Society of North America when it was granted non-profit status.   In 2021, we became a fully independent organization with a new name:  Ability Workshop Society.  </p>
+
+      <p>Ron Marshall, a long time volunteer,  made a substantial donation of metal working equipment in 2012.  With space donated by the Drop-In Centre,  we opened the workshop where people meet to socialize, collaborate and create.  In honour of his generosity, leadership and mentorship, the shop was named the Ron Marshall Center in 2019.</p>
+       
+      <p>Over the years, we've continued to grow and increase our capabilities to service the disabled community.  With over 90 new requests for assistance every year,  we continue to provide assistive devices to a vast array of people.  We have supported University of Calgary engineering students doing their capstone projects and partnered with CP Kids and Family. </p>
+        
     </section>
 
-    <section>
+    <section class="container mt-4">
       <h2>Our Services</h2>
       <ul>
         <li>Service 1</li>
@@ -38,25 +67,12 @@
       </ul>
     </section>
 
-    <section>
+    <section class="container mt-4">
       <h2>Contact Us</h2>
       <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2023 My Hackathon Website. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+       
