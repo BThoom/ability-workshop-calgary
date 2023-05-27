@@ -1,0 +1,12 @@
+/* styles.css */
+
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Add some basic styles to the body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
