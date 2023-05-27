@@ -1,8 +1,8 @@
 :root {
     /* Define your color palette using CSS variables */
     --primary-color: #233871;
-    --secondary-color: #ce5a5a;
-    --text-color: #333333;
+    --secondary-color: #ffffff;
+    --text-color: #000000;
   }
   
   body {
@@ -10,15 +10,23 @@
     color: var(--text-color);
   }
   
-  .ribbon {
+  .navbar {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
-    padding: 10px;
-    text-align: center;
   }
   
-  .ribbon a {
+  .navbar .navbar-nav .nav-link {
     color: var(--secondary-color);
-    text-decoration: none;
   }
   
+  .navbar .navbar-nav .nav-link:hover {
+    color: #fff;
+  }
+  
+  .navbar-toggler {
+    border-color: var(--secondary-color);
+  }
+  
+  .navbar-toggler-icon {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
