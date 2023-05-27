@@ -1,70 +1,104 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Ability Workshop Society</title>
-  <style>
-    header {
-      display: flex; /* Set the header as a flex container */
-      justify-content: space-between; /* Distribute the child elements evenly */
-      align-items: center; /* Center the child elements vertically */
-      background-color: #000000; /* Optional styling for the header background */
-      padding: 2px; /* Optional padding for the header */
-      color: white; /* Set the text color to white */
-    }
-
-    .logo {
-      display: flex; /* Set the logo and title as a flex container */
-      align-items: center; /* Center the logo and title vertically */
-    }
-
-    .logo img {
-      width: 170px; /* Set the width of the logo image */
-      height: 75px; /* Set the height of the logo image */
-    }
-
-    .title {
-      margin-left: 10px; /* Add optional spacing between the image and the title */
-    }
-
-    nav ul {
-      list-style-type: none; /* Remove bullet points from the navigation links */
-      display: flex; /* Set the navigation links as a flex container */
-    }
-
-    nav li {
-      margin-right: 10px; /* Optional spacing between navigation links */
-    }
-
-    nav a {
-      text-decoration: none; /* Remove underline from the hyperlinks */
-      color: white; /* Set the text color to white */
-      font-size: 16px; /* Set the font size for the navigation links */
-    }
-
-    nav {
-      margin-right: auto; /* Push the navigation links to the right */
-    }
-
-  </style>
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <img src="images/ability_wokshop_logo.png" alt="Logo">
-
-    <nav>
-      <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="volunteer.html">Volunteer</a></li>
-          <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Hackathon Website</title>
+        <!-- Include Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- Link your custom CSS file -->
+        <link rel="stylesheet" href="styles.css">
+      </head>
+      <body>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <header>
+          <header>
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                  <img src="images/ability_wokshop_logo.png" alt="Logo" width="120" height="50">
+                  <a class="navbar-brand" href="#">My Hackathon Website</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Request Assistance</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="volunteer.html">Volunteer</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="donation.html">Donate</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </header>
+        </header>
   <!-- Rest of your web page content goes here -->
 
+    <main>
+        <section class="container mt-4">
+            <h1>Welcome to My Web Page</h1>
+            
+            <div class="row">
+            <div class="col-6">
+                <img src="images/volunteer_images_welding.JPG" alt="Image description" width="1000" class="img-fluid">
+            </div>
+            </div>
+        </section>
+
+        <section class="container mt-4">
+            <h1>Welcome to My Web Page</h1>
+            
+            <div class="row">
+            <div class="col-6">
+                <img src="images/volunteer_images_1.JPG" alt="Image description" width="img-fluid">
+            </div>
+            <div class="col-6">
+                <img src="images/volunteer_images_2.JPG" alt="Image description" class="img-fluid">
+            </div>
+            </div>
+        </section>
+
+        <section class="container mt-4">
+            <h1>Welcome to My Web Page</h1>
+            
+            <div class="row">
+            <div class="col-6">
+                <img src="images/volunteer_images_3.JPG" alt="Image description" width="510" height="300" class="img-fluid">
+            </div>
+            <div class="col-6">
+                <img src="images/volunteer_images_4.JPG" alt="Image description" width="510" height="300" class="img-fluid">
+            </div>
+            </div>
+        </section>
+
+    <section class="container mt-4">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Service 1</li>
+        <li>Service 2</li>
+        <li>Service 3</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="container mt-4">
+    <p>&copy; 2023 Ability Workshop Society. All rights reserved.</p>
+  </footer>
+
+  <!-- Include Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
 <!DOCTYPE html>
