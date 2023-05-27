@@ -1,12 +1,32 @@
-/* styles.css */
-
-/* Reset default margin and padding for all elements */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* Add some basic styles to the body */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
+:root {
+    /* Define your color palette using CSS variables */
+    --primary-color: #233871;
+    --secondary-color: #ffffff;
+    --text-color: #000000;
+  }
+  
+  body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+  }
+  
+  .navbar {
+    background-color: var(--primary-color);
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    color: var(--secondary-color);
+  }
+  
+  .navbar .navbar-nav .nav-link:hover {
+    color: #fff;
+  }
+  
+  .navbar-toggler {
+    border-color: var(--secondary-color);
+  }
+  
+  .navbar-toggler-icon {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
