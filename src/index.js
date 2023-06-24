@@ -5,11 +5,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Volunteer from './Volunteer'
+import Donation from './Donation'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Volunteer />
+    <Donation />
   </React.StrictMode>
 );
 
