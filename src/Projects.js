@@ -1,42 +1,10 @@
+import NavBar from './NavBar'
 
 function Projects(){
     return(
     <html>
-
         <body>
-
-            <header>
-            <nav class="navbar navbar-expand-lg sticky-top">
-                <div class="container">
-                <a class="navbar-brand" href="/">
-                    <img src="images/ability_wokshop_logo.png" alt="Logo" width="120" height="50"/>
-                </a>
-                
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse navbar-text" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Request Assistance</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
-                        </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="volunteer.html">Volunteer</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="donation.html">Donate</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-            </nav>
-            </header>
+            <NavBar />
             
             <main><section>
             <div
