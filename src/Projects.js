@@ -1,9 +1,8 @@
-import NavBar from './NavBar'
+import { NavBar, Footer } from './GlobalComponents'
 
 function Projects(){
     return(
-    <html>
-        <body>
+        <div className="App">
             <NavBar />
             
             <main><section>
@@ -839,13 +838,11 @@ function Projects(){
             </div>
         </div>
 
-        </section></main>
+        </section>
+        </main>
 
-        
-
-        
-        </body>
-        </html>
+        <Footer />
+        </div>
     );
 }
 

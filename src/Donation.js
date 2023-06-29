@@ -1,9 +1,8 @@
-import NavBar from './NavBar'
+import { NavBar, Footer } from './GlobalComponents'
 
 function Donation(){
     return(
- 
-        <body>
+        <div className="App">
             <NavBar />
 
             <main>
@@ -19,13 +18,8 @@ function Donation(){
             </section>
             </main>
 
-            <footer class="container mt-4">
-            <p>&copy; 2023 Ability Workshop Society. All rights reserved.</p>
-            </footer>
-        
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        </body>
-        
+            <Footer />
+        </div>
     );
 }
 
