@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import NavBar from './NavBar'
@@ -6,9 +5,6 @@ import NavBar from './NavBar'
 function Volunteer() {
   return (
     <div className="App">
-      <html lang="en">
-
-            <body>
               <NavBar />
 
           <main>
@@ -52,8 +48,6 @@ function Volunteer() {
         </footer>
 
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      </body>
-      </html>
     </div>
   );
 }
