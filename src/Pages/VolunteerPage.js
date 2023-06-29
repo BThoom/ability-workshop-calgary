@@ -1,6 +1,6 @@
-import { NavBar, Footer } from './GlobalComponents'
+import { NavBar, Footer } from '../GlobalComponents'
 
-function Volunteer() {
+function VolunteerPage() {
     return (
         <div className="App">
             <NavBar />
@@ -46,4 +46,4 @@ function Volunteer() {
     );
 }
 
-export default Volunteer;
+export default VolunteerPage;

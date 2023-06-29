@@ -1,6 +1,6 @@
-import { NavBar, Footer } from './GlobalComponents'
+import { NavBar, Footer } from '../GlobalComponents'
 
-function Donation() {
+function DonationPage() {
     return (
         <div className="App">
             <NavBar />
@@ -23,4 +23,4 @@ function Donation() {
     );
 }
 
-export default Donation;
+export default DonationPage;

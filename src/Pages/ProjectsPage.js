@@ -1,6 +1,6 @@
-import { NavBar, Footer } from './GlobalComponents'
+import { NavBar, Footer } from '../GlobalComponents'
 
-function Projects(){
+function ProjectsPage() {
     return(
         <div className="App">
             <NavBar />
@@ -846,4 +846,4 @@ function Projects(){
     );
 }
 
-export default Projects;
+export default ProjectsPage;
