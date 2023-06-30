@@ -4,10 +4,11 @@ import App from './App';
 import VolunteerPage from './Pages/VolunteerPage'
 import DonationPage from './Pages/DonationPage'
 import ProjectsPage from './Pages/ProjectsPage'
+import RequestAssistancePage from './Pages/RequestAssistancePage'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <DonationPage />
+    <RequestAssistancePage />
   </React.StrictMode>
 );
