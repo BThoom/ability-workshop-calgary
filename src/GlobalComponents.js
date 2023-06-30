@@ -37,7 +37,7 @@ function NavBar() {
 function Footer() {
     return (
         <footer class="text-center bg-light text-muted p-4">
-          <p>&copy; 2023 Ability Workshop Society. All rights reserved.</p>
+          <p class="p-0">&copy; 2023 Ability Workshop Society. All rights reserved.</p>
         </footer>
     );
 }
