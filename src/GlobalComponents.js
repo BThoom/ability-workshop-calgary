@@ -13,19 +13,19 @@ function NavBar() {
                 <div class="collapse navbar-collapse flex-row-reverse" id="myNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="/request-assistance.html">Request Assistance</a>
+                            <a class="nav-link" href="/request-assistance">Request Assistance</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/projects.html">Projects</a>
+                            <a class="nav-link" href="/projects">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/volunteer.html">Volunteer</a>
+                            <a class="nav-link" href="/volunteer">Volunteer</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/donation.html">Donate</a>
+                            <a class="nav-link" href="/donate">Donate</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="/about">About Us</a>
                         </li>
                     </ul>
                 </div>
