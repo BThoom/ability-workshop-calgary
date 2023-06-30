@@ -1,11 +1,8 @@
-import { NavBar, Footer } from '../GlobalComponents'
+import Page from './Page'
 
 function RequestAssistancePage() {
     return (
-        <div className="App">
-            <NavBar />
-
-            <main>
+        <Page>
         <section class="container-fluid px-0">
         <div class="row mx-0">
             <div class="col px-0">
@@ -142,10 +139,7 @@ function RequestAssistancePage() {
         </div>
       </div>
 	  </section>
-        </main>
-
-            <Footer />
-        </div>
+        </Page>
     );
 }
 

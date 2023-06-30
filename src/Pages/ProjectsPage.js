@@ -1,11 +1,9 @@
-import { NavBar, Footer } from '../GlobalComponents'
+import Page from './Page'
 
 function ProjectsPage() {
-    return(
-        <div className="App">
-            <NavBar />
-            
-            <main><section>
+    return (
+        <Page>
+            <section>
             <div
             id="carouselMultiItemExample"
             class="carousel slide carousel-dark text-center"
@@ -839,10 +837,7 @@ function ProjectsPage() {
         </div>
 
         </section>
-        </main>
-
-        <Footer />
-        </div>
+        </Page>
     );
 }
 
