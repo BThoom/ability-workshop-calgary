@@ -1,8 +1,8 @@
-import Page from './Page'
+import PageContents from './PageContents'
 
 function RequestAssistancePage() {
     return (
-        <Page>
+        <PageContents>
         <section class="container-fluid px-0">
         <div class="row mx-0">
             <div class="col px-0">
@@ -45,7 +45,7 @@ function RequestAssistancePage() {
               <div class="col-lg-4">
                 <div class="card">
                   <img
-                    src="/images/assistance_images_1.jpg"
+                    src="images/assistance_images_1.jpg"
                     class="card-img-top"
                     alt="example1"
                   />
@@ -62,7 +62,7 @@ function RequestAssistancePage() {
               <div class="col-lg-4">
                 <div class="card">
                   <img
-                    src="/images/assistance_images_2.jpg"
+                    src="images/assistance_images_2.jpg"
                     class="card-img-top"
                     alt="Sunset Over the Sea"
                   />
@@ -77,7 +77,7 @@ function RequestAssistancePage() {
 			  <div class="col-lg-4">
                 <div class="card">
                   <img
-                    src="/images/assistance_images_3.png"
+                    src="images/assistance_images_3.png"
                     class="card-img-top"
                     alt="Fissure in Sandstone"
                   />
@@ -98,7 +98,7 @@ function RequestAssistancePage() {
               <div class="col-lg-4">
                 <div class="card">
                   <img
-                    src="/images/assistance_images_4.jpg"
+                    src="images/assistance_images_4.jpg"
                     class="card-img-top"
                     alt="Fissure in Sandstone"
                   />
@@ -115,7 +115,7 @@ function RequestAssistancePage() {
               <div class="col-lg-4">
                 <div class="card">
                   <img
-                    src="/images/assistance_images_5.jpg"
+                    src="images/assistance_images_5.jpg"
                     class="card-img-top"
                     alt="Storm Clouds"
                   />
@@ -139,7 +139,7 @@ function RequestAssistancePage() {
         </div>
       </div>
 	  </section>
-        </Page>
+        </PageContents>
     );
 }
 

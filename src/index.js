@@ -1,38 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
+import Page from './Pages/Page'
 import HomePage from './Pages/HomePage'
 import VolunteerPage from './Pages/VolunteerPage'
 import DonationPage from './Pages/DonationPage'
 import ProjectsPage from './Pages/ProjectsPage'
 import RequestAssistancePage from './Pages/RequestAssistancePage'
 
-const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <HomePage />
-    },
-    {
-        path: "/donate",
-        element: <DonationPage />
-    },
-    {
-        path: "/projects",
-        element: <ProjectsPage />
-    },
-    {
-        path: "/request-assistance",
-        element: <RequestAssistancePage />
-    },
-    {
-        path: "/volunteer",
-        element: <VolunteerPage />
-    }
-]);
+const router = createHashRouter(
+    createRoutesFromElements(
+        <Route path="/" element={<Page />}>
+            <Route index element={<HomePage />} />
+            <Route path="donate" element={<DonationPage />} />
+            <Route path="projects" element={<ProjectsPage />} />
+            <Route path="request-assistance" element={<RequestAssistancePage />} />
+            <Route path="volunteer" element={<VolunteerPage />} />
+        </Route>
+    )
+);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <React.StrictMode>
-        <RouterProvider router={router} />
-    </React.StrictMode>
+    <RouterProvider router={router} />
 );

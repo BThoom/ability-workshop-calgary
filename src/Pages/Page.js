@@ -1,13 +1,12 @@
 import { NavBar, Footer } from '../GlobalComponents'
+import { Outlet } from 'react-router-dom';
 
-function Page({children}) {
+function Page() {
     return (
         <div className="App">
             <NavBar />
 
-            <main>
-                {children}
-            </main>
+            <Outlet />
 
             <Footer />
         </div>

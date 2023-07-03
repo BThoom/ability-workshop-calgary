@@ -1,8 +1,8 @@
-import Page from './Page'
+import PageContents from './PageContents'
 
 function HomePage() {
     return (
-        <Page>
+        <PageContents>
             <section class="container mt-4">
                 <img src="images/Ability Workshop main image.jpeg" alt="Three men in a workshop repairing a wheelchair on a work bench" style={{maxWidth: "100%"}} />
                 <h1>Welcome to Ability Workshop Society</h1>
@@ -18,7 +18,7 @@ function HomePage() {
                 
                 <p>Over the years, we've continued to grow and increase our capabilities to service the disabled community.  With over 90 new requests for assistance every year,  we continue to provide assistive devices to a vast array of people.  We have supported University of Calgary engineering students doing their capstone projects and partnered with CP Kids and Family. </p>
             </section>
-        </Page>
+        </PageContents>
     );
 }
 

@@ -1,8 +1,8 @@
-import Page from './Page'
+import PageContents from './PageContents';
 
 function ProjectsPage() {
     return (
-        <Page>
+        <PageContents>
             <section>
             <div
             id="carouselMultiItemExample"
@@ -837,7 +837,7 @@ function ProjectsPage() {
         </div>
 
         </section>
-        </Page>
+        </PageContents>
     );
 }
 

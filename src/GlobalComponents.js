@@ -1,10 +1,12 @@
+import { Link, NavLink } from 'react-router-dom';
+
 function NavBar() {
     return (
         <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/">
-                    <img src="/images/ability_wokshop_logo.png" alt="Logo" width="120" height="50" alt="Ability Workshop Logo" />
-                </a>
+                <Link class="navbar-brand" to="/">
+                    <img src="images/ability_wokshop_logo.png" width="120" height="50" alt="Ability Workshop Logo" />
+                </Link>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -13,19 +15,19 @@ function NavBar() {
                 <div class="collapse navbar-collapse flex-row-reverse" id="myNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="/request-assistance">Request Assistance</a>
+                            <NavLink className="nav-link" to="/request-assistance">Request Assistance</NavLink>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/projects">Projects</a>
+                            <NavLink className="nav-link" to="/projects">Projects</NavLink>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/volunteer">Volunteer</a>
+                            <NavLink className="nav-link" to="/volunteer">Volunteer</NavLink>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/donate">Donate</a>
+                            <NavLink className="nav-link" to="/donate">Donate</NavLink>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/about">About Us</a>
+                            <NavLink className="nav-link" to="/about">About Us</NavLink>
                         </li>
                     </ul>
                 </div>

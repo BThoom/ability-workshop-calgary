@@ -1,8 +1,8 @@
-import Page from './Page'
+import PageContents from './PageContents'
 
 function VolunteerPage() {
     return (
-        <Page>
+        <PageContents>
             <section class="container-fluid px-0">
             <div class="row mx-0">
                 <div class="col px-0">
@@ -36,7 +36,7 @@ function VolunteerPage() {
                     </div>
                 </div>
             </section>
-        </Page>
+        </PageContents>
     );
 }
 

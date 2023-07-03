@@ -1,8 +1,8 @@
-import Page from './Page'
+import PageContents from './PageContents'
 
 function DonationPage() {
     return (
-        <Page>
+        <PageContents>
             <section class="container mt-4">
                 <h1>Donation</h1>
             </section>
@@ -13,7 +13,7 @@ function DonationPage() {
                     src="https://shawcharityclassic.com/charity/participating-charities/ability-workshop-society/" title="Shaw Charity Classic Donation Page"></iframe>
                 </div>
             </section>
-        </Page>
+        </PageContents>
     );
 }
 
