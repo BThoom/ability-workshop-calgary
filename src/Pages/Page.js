@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { NavBar, Footer } from '../GlobalComponents'
-import { Outlet, useLocation } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 
 function Page(props) {
     const [title, setTitle] = useState("");
@@ -16,13 +16,13 @@ function Page(props) {
         else if (typeof(props.baseTitle) === "string"  && props.baseTitle !== "") {
             document.title = props.baseTitle;
         }
-    }, [title]);
+    }, [title, props.baseTitle]);
 
     return (
         <div className="App">
             <NavBar />
 
-            <Outlet context={[title, setTitle]} />
+            <Outlet context={{setTitle: setTitle}} />
 
             <Footer />
         </div>

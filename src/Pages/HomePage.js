@@ -3,10 +3,10 @@ import { useOutletContext } from 'react-router-dom';
 import PageContents from './PageContents'
 
 function HomePage() {
-    const [title, setTitle] = useOutletContext();
-    useEffect(() => { 
+    const { setTitle } = useOutletContext();
+    useEffect(() => {
         setTitle("Home");
-    }, []);
+    }, [setTitle]);
 
     return (
         <PageContents>

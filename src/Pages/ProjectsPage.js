@@ -3,10 +3,10 @@ import { useOutletContext } from 'react-router-dom';
 import PageContents from './PageContents';
 
 function ProjectsPage() {
-    const [title, setTitle] = useOutletContext();
-    useEffect(() => { 
+    const { setTitle } = useOutletContext();
+    useEffect(() => {
         setTitle("Projects");
-    }, []);
+    }, [setTitle]);
 
     return (
         <PageContents>
@@ -63,7 +63,7 @@ function ProjectsPage() {
                   <img
                     src="./images/gallery_example_picture_2.png"
                     class="card-img-top"
-                    alt="Close-up photo of a woman wearing a hat and a headset"
+                    alt="A woman wearing a hat and a headset"
                   />
                   <div class="card-body">
                     <h4 class="card-title">Card title</h4>

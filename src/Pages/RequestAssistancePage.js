@@ -3,11 +3,11 @@ import { useOutletContext } from 'react-router-dom';
 import PageContents from './PageContents'
 
 function RequestAssistancePage() {
-    const [title, setTitle] = useOutletContext();
-    useEffect(() => { 
+    const { setTitle } = useOutletContext();
+    useEffect(() => {
         setTitle("Request Assistance");
-    }, []);
-
+    }, [setTitle]);
+    
     return (
         <PageContents>
         <section class="container-fluid px-0">
