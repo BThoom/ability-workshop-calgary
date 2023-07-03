@@ -1,6 +1,8 @@
 name: deploy
 run-name: Deploy Website
-on: [push]
+on:
+  push:
+    branches: [$default-branch]
 jobs:
   gh-pages:
     name: Deploy to GitHub Pages
