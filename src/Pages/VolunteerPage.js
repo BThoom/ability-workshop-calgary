@@ -1,6 +1,13 @@
+import { useEffect } from 'react';
+import { useOutletContext } from 'react-router-dom';
 import PageContents from './PageContents'
 
 function VolunteerPage() {
+    const [title, setTitle] = useOutletContext();
+    useEffect(() => { 
+        setTitle("Volunteer");
+    }, []);
+
     return (
         <PageContents>
             <section class="container-fluid px-0">

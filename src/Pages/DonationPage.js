@@ -1,6 +1,13 @@
+import { useEffect } from 'react';
+import { useOutletContext } from 'react-router-dom';
 import PageContents from './PageContents'
 
 function DonationPage() {
+    const [title, setTitle] = useOutletContext();
+    useEffect(() => { 
+        setTitle("Donation");
+    }, []);
+
     return (
         <PageContents>
             <section class="container mt-4">

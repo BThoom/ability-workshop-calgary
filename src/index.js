@@ -10,7 +10,7 @@ import RequestAssistancePage from './Pages/RequestAssistancePage'
 
 const router = createHashRouter(
     createRoutesFromElements(
-        <Route path="/" element={<Page />}>
+        <Route path="/" element={<Page baseTitle="Ability Workshop" />}>
             <Route index element={<HomePage />} />
             <Route path="donate" element={<DonationPage />} />
             <Route path="projects" element={<ProjectsPage />} />
