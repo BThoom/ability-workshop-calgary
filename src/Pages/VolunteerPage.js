@@ -6,7 +6,7 @@ function VolunteerPage() {
             <section class="container-fluid px-0">
             <div class="row mx-0">
                 <div class="col px-0">
-                    <img src="images/volunteer_images_welding.JPG" alt="Close up image of welding" class="img-fluid" style={{width: "100%", height: "400px"}} />
+                    <img src="images/volunteer_images_welding.JPG" alt="Close up of welding" class="img-fluid" style={{width: "100%", height: "400px"}} />
                 </div>
             </div>
             </section>

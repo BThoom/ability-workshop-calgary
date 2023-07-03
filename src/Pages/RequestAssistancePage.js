@@ -6,7 +6,7 @@ function RequestAssistancePage() {
         <section class="container-fluid px-0">
         <div class="row mx-0">
             <div class="col px-0">
-                <img src="images/Ability Workshop main image.jpeg" alt="Image description" class="img-fluid" style={{width: "100%", height: "400px"}} />
+                <img src="images/Ability Workshop main image.jpeg" alt="Three men in a workshop repairing a wheelchair on a work bench" class="img-fluid" style={{width: "100%", height: "400px"}} />
             </div>
             </div>
         </section>
