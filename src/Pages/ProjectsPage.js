@@ -1,92 +1,21 @@
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Ability Workshop</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    
-    <!-- Font Awesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- MDB -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css"
-      rel="stylesheet"
-    />
-    <!-- Link your custom CSS file -->
-    <link rel="stylesheet" href="styles.css">
+import { useEffect } from 'react';
+import { useOutletContext } from 'react-router-dom';
+import PageContents from './PageContents';
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <!-- MDB -->
-    <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"
-    ></script>
-  </head>
-  <body>
+function ProjectsPage() {
+    const { setTitle } = useOutletContext();
+    useEffect(() => {
+        setTitle("Projects");
+    }, [setTitle]);
 
-    <header>
-      <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
-        <div class="container">
-          <a class="navbar-brand" href="https://bthoom.github.io/ability-workshop-calgary/">
-            <img src="images/ability_wokshop_logo.png" alt="Logo" width="120" height="50" alt="Website logo with the words Ability Workshop Society Innovative Solution">
-          </a>
-      
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Request Assistance</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="projects.html">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="volunteer.html">Volunteer</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="donation.html">Donate</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-            </ul>
-            <ul class="nav navbar-nav">
-              <li class="nav-item dropdown">
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="request-assistance.html">Request Assistance</a></li>
-                  <li><a class="dropdown-item" href="projects.html">Projects</a></li>
-                  <li><a class="dropdown-item" href="volunteer.html">Volunteer</a></li>
-                  <li><a class="dropdown-item" href="donation.html">Donate</a></li>
-                  <li><a class="dropdown-item" href="#">About Us</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    
-    <main><section>
-    <!-- Carousel wrapper -->
+    return (
+        <PageContents>
+            <section>
     <div
       id="carouselMultiItemExample"
       class="carousel slide carousel-dark text-center"
       data-mdb-ride="carousel"
     >
-      <!-- Controls -->
       <div class="d-flex justify-content-center mb-4">
         <button
           class="carousel-control-prev position-relative"
@@ -97,7 +26,7 @@
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <h3 style="margin-top: 15px;">2020 Projects</h3>
+        <h3 style={{marginTop: "15px"}}>2020 Projects</h3>
         <button
           class="carousel-control-next position-relative"
           type="button"
@@ -108,9 +37,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <!-- Inner -->
       <div class="carousel-inner py-4">
-        <!-- Single item -->
         <div class="carousel-item active">
           <div class="container">
             <div class="row">
@@ -136,7 +63,7 @@
                   <img
                     src="./images/gallery_example_picture_2.png"
                     class="card-img-top"
-                    alt="Close-up photo of a woman wearing a hat and a headset"
+                    alt="A woman wearing a hat and a headset"
                   />
                   <div class="card-body">
                     <h4 class="card-title">Card title</h4>
@@ -170,7 +97,6 @@
           </div>
         </div>
 
-        <!-- Single item -->
         <div class="carousel-item">
           <div class="container">
             <div class="row">
@@ -179,7 +105,7 @@
                   <img
                     src="./images/gallery_example_picture_4.png"
                     class="card-img-top"
-                    alt="Accessibility device"
+                    alt="Remotely operated door lock"
                   />
                   <div class="card-body">
                     <h4 class="card-title">Card title</h4>
@@ -231,7 +157,6 @@
           </div>
         </div>
 
-        <!-- Single item -->
         <div class="carousel-item">
           <div class="container">
             <div class="row">
@@ -292,17 +217,13 @@
           </div>
         </div>
       </div>
-      <!-- Inner -->
     </div>
-    <!-- Carousel wrapper -->
 
-      <!-- Carousel wrapper -->
       <div
       id="carouselMultiItemExample2021"
       class="carousel slide carousel-dark text-center"
       data-mdb-ride="carousel"
     >
-      <!-- Controls -->
       <div class="d-flex justify-content-center mb-4">
         <button
           class="carousel-control-prev position-relative"
@@ -313,7 +234,7 @@
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <h3 style="margin-top: 15px;">2021 Projects</h3>
+        <h3 style={{marginTop: "15px"}}>2021 Projects</h3>
         <button
           class="carousel-control-next position-relative"
           type="button"
@@ -324,9 +245,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <!-- Inner -->
       <div class="carousel-inner py-4">
-        <!-- Single item -->
         <div class="carousel-item active">
           <div class="container">
             <div class="row">
@@ -386,7 +305,6 @@
           </div>
         </div>
 
-        <!-- Single item -->
         <div class="carousel-item">
           <div class="container">
             <div class="row">
@@ -447,7 +365,6 @@
           </div>
         </div>
 
-        <!-- Single item -->
         <div class="carousel-item">
           <div class="container">
             <div class="row">
@@ -508,17 +425,13 @@
           </div>
         </div>
       </div>
-      <!-- Inner -->
     </div>
-    <!-- Carousel wrapper -->
     
-        <!-- Carousel wrapper -->
         <div
         id="carouselMultiItemExample2022"
         class="carousel slide carousel-dark text-center"
         data-mdb-ride="carousel"
       >
-        <!-- Controls -->
         <div class="d-flex justify-content-center mb-4">
           <button
             class="carousel-control-prev position-relative"
@@ -529,7 +442,7 @@
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <h3 style="margin-top: 15px;">2022 Projects</h3>
+          <h3 style={{marginTop: "15px"}}>2022 Projects</h3>
           <button
             class="carousel-control-next position-relative"
             type="button"
@@ -540,9 +453,7 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <!-- Inner -->
         <div class="carousel-inner py-4">
-          <!-- Single item -->
           <div class="carousel-item active">
             <div class="container">
               <div class="row">
@@ -602,7 +513,6 @@
             </div>
           </div>
   
-          <!-- Single item -->
           <div class="carousel-item">
             <div class="container">
               <div class="row">
@@ -611,7 +521,7 @@
                     <img
                       src="./images/gallery_example_picture_4.png"
                       class="card-img-top"
-                      alt="Accessibility device"
+                      alt="Remotely operated door lock"
                     />
                     <div class="card-body">
                       <h4 class="card-title">Card title</h4>
@@ -663,7 +573,6 @@
             </div>
           </div>
   
-          <!-- Single item -->
           <div class="carousel-item">
             <div class="container">
               <div class="row">
@@ -724,17 +633,13 @@
             </div>
           </div>
         </div>
-        <!-- Inner -->
       </div>
-      <!-- Carousel wrapper -->
 
-          <!-- Carousel wrapper -->
     <div
     id="carouselMultiItemExample2023"
     class="carousel slide carousel-dark text-center"
     data-mdb-ride="carousel"
   >
-    <!-- Controls -->
     <div class="d-flex justify-content-center mb-4">
       <button
         class="carousel-control-prev position-relative"
@@ -745,7 +650,7 @@
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <h3 style="margin-top: 15px;">2023 Projects</h3>
+      <h3 style={{marginTop: "15px"}}>2023 Projects</h3>
       <button
         class="carousel-control-next position-relative"
         type="button"
@@ -756,9 +661,7 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <!-- Inner -->
     <div class="carousel-inner py-4">
-      <!-- Single item -->
       <div class="carousel-item active">
         <div class="container">
           <div class="row">
@@ -818,7 +721,6 @@
         </div>
       </div>
 
-      <!-- Single item -->
       <div class="carousel-item">
         <div class="container">
           <div class="row">
@@ -827,7 +729,7 @@
                 <img
                   src="./images/gallery_example_picture_4.png"
                   class="card-img-top"
-                  alt="Accessibility device"
+                  alt="Remotely operated door lock"
                 />
                 <div class="card-body">
                   <h4 class="card-title">Card title</h4>
@@ -879,7 +781,6 @@
         </div>
       </div>
 
-      <!-- Single item -->
       <div class="carousel-item">
         <div class="container">
           <div class="row">
@@ -940,14 +841,11 @@
         </div>
       </div>
     </div>
-    <!-- Inner -->
   </div>
-  <!-- Carousel wrapper -->
 
-  </section></main>
+  </section>
+        </PageContents>
+    );
+}
 
-  
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
-</html>
+export default ProjectsPage;
