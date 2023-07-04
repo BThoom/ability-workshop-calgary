@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Ability Workshop Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains all the code for Ability Workshop's new website. The current website is located at https://www.abilityworkshop.ca. This new website can currently be found at https://bthoom.github.io/ability-workshop-calgary/.
 
-## Available Scripts
+## Motivation
 
-In the project directory, you can run:
+This website rewrite attempts to accomplish the following goals:
+- Reduce points of friction for visitors
+- Improve accessibility
+- Modernize interface
+- Migrate away from current SaaS solution
 
-### `npm start`
+## Contributing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To set up a development environment for working on this website, you will need the following dependencies installed on your comptuer:
+- git
+- node + npm
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Clone this repository, and then in terminal with the current directory set to the repository root, run the following command:
+```bash
+npm install
+```
+This will install all the libraries this website depends on into the node_modules directory. Then you can start up a web server to run the website with:
+```bash
+npm start
+```
 
-### `npm test`
+When the web server is set up, it should automatically bring you to the website which is hosted at http://localhost:3000 by default.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+That is all there is to setting up the development environment for this. Most modifications you make to the source files should automatically cause the
+page you are on to refresh with the latest updates.
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This repository has an automated deployment process using GitHub Actions. This builds the code present in the main branch into a package that can
+be run on GitHub Pages' static web hosting, and pushes it to the gh-pages branch. You should never need to modify the gh-pages branch or deploy manually.
 
-### `npm run build` fails to minify
+If however you are on your own fork and wish to test a branch other than main on your own GitHub Pages instance, you can do this. First you must
+make sure that the git remote `origin` is set to your fork, and not to the main repository. You can check this by running:
+```bash
+git remote -v
+```
+If you see a line starting with `origin` that contains your username in the url on the same line, then your repository is configured correctly for this.
+If you do not see that, you will likely have to use some combination of `git remote rename` and `git remote set-url` to fix this.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+When you are set up as described above, all you have to do is run:
+```bash
+npm run deploy
+```
+This will build the website, commit, and push it to your gh-pages branch. Once pushed, GitHub will automatically build and deploy your website to
+https://<your_username>.github.io/ability-workshop-calgary/. This process may take a few minutes before you can see the updates online.
+Unlike with a local webserver, you will need to refresh any currently loaded pages manually.
